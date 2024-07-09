@@ -49,3 +49,53 @@ Calculator Using HTML & CSS
     </div>
 </body>
 </html>
+
+!-- CSS CODE --!
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.box{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc{
+    background-color:rgb(0, 139, 139);
+    padding: 20px;
+    border-radius: 10px;
+}
+.calc form input{
+    border: 1px;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    box-shadow: -8px -8px 15px rgba(255,255,255,0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color:white;
+    background-color: rgb(0, 131, 131);
+    cursor: pointer;
+    margin: 10px;
+}
+form .result{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+form .result input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input.ans{
+    width: 140px;
+}
