@@ -1,2 +1,51 @@
 # CodSoft
-Web Development Internship Task
+Calculator Using HTML & CSS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task3style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="calc">
+            <form>
+                <div class="result">
+                    <input type="text" name="result">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="result.value = '' ">
+                    <input type="button" value="DE" onclick="result.value = result.value.toString().slice(0,-1) ">
+                    <input type="button" value="." onclick="result.value += '.' ">
+                    <input type="button" value="/" onclick="result.value += '/' ">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="result.value += '7' ">
+                    <input type="button" value="8" onclick="result.value += '8' ">
+                    <input type="button" value="9" onclick="result.value += '9' ">
+                    <input type="button" value="*" onclick="result.value += '*' ">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="result.value += '4' ">
+                    <input type="button" value="5" onclick="result.value += '5' ">
+                    <input type="button" value="6" onclick="result.value += '6' ">
+                    <input type="button" value="-" onclick="result.value += '-' ">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="result.value += '1' ">
+                    <input type="button" value="2" onclick="result.value += '2' ">
+                    <input type="button" value="3" onclick="result.value += '3' ">
+                    <input type="button" value="+" onclick="result.value += '+' ">
+                </div>
+                <div> 
+                    <input type="button" value="00" onclick="result.value += '00' ">
+                    <input type="button" value="0" onclick="result.value += '0' ">
+                    <input type="button" value="=" class="ans" onclick="result.value = eval(result.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
